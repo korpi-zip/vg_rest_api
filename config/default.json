@@ -1,0 +1,14 @@
+{
+    "db-connections": {
+        "mongodb":{
+            "host": "cluster0.dlj3y2x.mongodb.net",
+            "user" : "videogames_rest_api_user",
+            "password" : "x8E6GYMArCxgthHr",
+            "dbname":"VideogamesDB"
+        }
+    },
+    "secretkeys":{
+        "cryptojs": "08!7g%I*08mkkLT$"
+    },
+    "server-port":3000
+}
