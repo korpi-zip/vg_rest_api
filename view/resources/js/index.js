@@ -21,7 +21,8 @@ async function manageOptions(event) {
   const option = event.target.text;
   switch (option) {
     case "Crear reseña":
-      await Helpers.loadPage("./resources/views/form.html", "main");      
+      await Helpers.loadPage("./resources/views/form.html", "main");
+      postData()      
       break;
     case "Buscar reseña":
       await Helpers.loadPage("./resources/views/records.html", "main");      
@@ -34,5 +35,16 @@ async function manageOptions(event) {
       break;
   }
   document.querySelector(".main-nav").classList.add("hidden");
+}
+
+async function postData(){
+  document.querySelector("#create").addEventListener('click', async()=>{
+    let video_game={
+      name: document.querySelector('#id_name').value,
+      company: document.querySelector('#id_company').value,
+      fecha: document.querySelector('#id_fecha').value 
+    }
+    console.log(video_game)
+  })
 }
 
