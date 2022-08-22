@@ -11,6 +11,7 @@ exports.createVideoGame = (req, res, next) =>  {
         score: req.body.score
     };
     videoGameDto.create(vg,(err,data) => {
+        console.log(err)
         if (err){
             videoGameDto.delete({_id:data._id},(err,data) => {
                 return res.status(400).json(

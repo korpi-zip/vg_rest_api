@@ -2,7 +2,7 @@
 const express = require("express")
 const config = require("config")
 const bodyParser = require("body-parser")
-
+const cors = require("cors");
 /** app configuration */
 
 const app = express();
@@ -12,6 +12,7 @@ const urlEncodedParser = bodyParser.urlencoded(
     {extended: true}
 );
 
+app.use(cors({ origin: "*" }));
 app.use(jsonParser);
 app.use(urlEncodedParser)
 

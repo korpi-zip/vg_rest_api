@@ -14,8 +14,7 @@ const videogameSchema = new mongoose.Schema({
         required: "true"
     },
     score:{
-        type: "String",
-        required: "true"
+        type: "String"
     },
 });
 //** Schema Exportation */

@@ -1,9 +1,9 @@
 {
     "db-connections": {
         "mongodb":{
-            "host": "cluster0.dlj3y2x.mongodb.net",
-            "user" : "videogames_rest_api_user",
-            "password" : "x8E6GYMArCxgthHr",
+            "host": "cluster0.04yi1r7.mongodb.net",
+            "user" : "yaircamilo05",
+            "password" : "ETXnta82",
             "dbname":"VideogamesDB"
         }
     },
