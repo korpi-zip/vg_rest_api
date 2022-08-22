@@ -2,8 +2,8 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: [ // ← OJO
-    './index.html',
-    './resources/**/*.{html,js}'
+    './view/index.html',
+    './view/resources/**/*.{html,js}'
   ],
 
   darkMode: 'media', // or 'media' or 'class'
@@ -15,6 +15,9 @@ module.exports = {
     },
 
     extend: { // https://tailwindcss.com/docs/customizing-colors#color-palette-reference
+      screens:{
+        'md2' : '992px'
+      },
       colors: {
         teal: colors.teal, 
         'light-blue': colors.sky,

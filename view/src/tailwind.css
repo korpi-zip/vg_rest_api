@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+  :root {
+
+    --primary-dark: #95383C;
+    --primary-default: #C74B50;
+    --primary-light: #DC8F92;
+  
+    --secondary-dark: #7C792F;
+    --secondary-default: #C7C24B;
+    --secondary-light: #EAE8BC;
+  
+    --success-dark: #008969;
+    --success-default: #18bc9c;
+    --success-light: #97ffff;
+  
+    --info-dark: #0165a8;
+    --info-default: #3498db;
+    --info-light: #b3ffff;
+  
+    --warning-dark: #c06900;
+    --warning-default: #f39c12;
+    --warning-light: #ffff91;
+  
+    --danger-dark: #b41909;
+    --danger-default: #e74c3c;
+    --danger-light: #ffcbbb;
+  
+    --gray-dark: #01070d;
+    --gray-default: #343a40;
+    --gray-light: #b3b9bf;
+  }
+  
+  @layer base {
+  
+    .active {
+      @apply block;
+    }
+    
+    .item-menu {
+      @apply flex p-3 pl-3 bg-gray-200 hover:bg-primary hover:text-white md:text-lg rounded-md;
+    }
+
+    .custom-button {
+      @apply bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 text-white m-3 py-2 px-4 rounded;
+    }
+
+    label{
+      @apply text-xl mb-2 
+    }
+
+    input{
+      @apply border-2 border-gray-200 rounded-md mb-5 h-8
+    }
+    h1 {
+      @apply text-3xl text-primary-dark tracking-tighter leading-10;
+    }
+  
+    h2 {
+      @apply text-2xl text-primary tracking-tight leading-10;
+    }
+  
+    h3 {
+      @apply italic text-xl text-primary leading-10;
+    }
+  
+    p {
+      @apply text-primary;
+    }
+  
+    #content a {
+      @apply no-underline text-blue-700 hover:underline;
+    }
+  
+}
