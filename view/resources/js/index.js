@@ -20,10 +20,10 @@ async function manageOptions(event) {
    
   const option = event.target.text;
   switch (option) {
-    case "Formulario":
+    case "Crear reseña":
       await Helpers.loadPage("./resources/views/form.html", "main");      
       break;
-    case "Registros":
+    case "Buscar reseña":
       await Helpers.loadPage("./resources/views/records.html", "main");      
       break;
     default:

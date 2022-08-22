@@ -616,6 +616,10 @@ video {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
 }
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -668,19 +672,43 @@ video {
 .border-opacity-20 {
   --tw-border-opacity: 0.2;
 }
-.bg-primary-dark {
-  background-color: var(--primary-dark);
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-white\/75 {
+  background-color: rgb(255 255 255 / 0.75);
+}
+.bg-white\/80 {
+  background-color: rgb(255 255 255 / 0.8);
+}
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+.bg-\[url\(\'https\:\/\/wallpaper\.dog\/large\/20525131\.jpg\'\)\] {
+  background-image: url('https://wallpaper.dog/large/20525131.jpg');
 }
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
-.from-primary-light {
-  --tw-gradient-from: var(--primary-light);
-  --tw-gradient-to: rgb(255 255 255 / 0);
+.from-cyan-500 {
+  --tw-gradient-from: #06b6d4;
+  --tw-gradient-to: rgb(6 182 212 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
-.to-primary {
-  --tw-gradient-to: var(--primary-default);
+.from-gray-500 {
+  --tw-gradient-from: #6b7280;
+  --tw-gradient-to: rgb(107 114 128 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.to-blue-500 {
+  --tw-gradient-to: #3b82f6;
+}
+.to-red-500 {
+  --tw-gradient-to: #ef4444;
+}
+.to-black {
+  --tw-gradient-to: #000;
 }
 .p-0 {
   padding: 0px;
@@ -698,6 +726,10 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .text-primary-dark {
   color: var(--primary-dark);
@@ -793,5 +825,10 @@ video {
   .xl\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+
+  .xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
